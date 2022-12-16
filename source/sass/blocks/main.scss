@@ -1,0 +1,48 @@
+.main {
+  text-align: center;
+}
+
+.main__suptitle {
+  font-family: 'Kaushan Script', sans-serif;
+  font-size: 72px;
+  color: #fff;
+
+  margin-bottom: 20px;
+}
+
+.main__title {
+  max-width: 850px;
+  margin: 0 auto;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: #fff;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #fff;
+
+    margin: 65px auto 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
