@@ -1,0 +1,77 @@
+.gallery {
+  margin-bottom: 110px;
+}
+
+.gallery__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.gallery__item {
+  background-color: #95e1d3;
+  position: relative;
+}
+
+.gallery__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.gallery__card {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+  position: relative;
+  transition: all 0.3s linear;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+
+  }
+
+  &:hover .gallery__image {
+    opacity: 0.1;
+  }
+
+  &:hover .gallery__team-icon {
+    opacity: 1;
+  }
+
+  &:hover .gallery__text {
+    opacity: 1;
+  }
+}
+
+.gallery__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.gallery__team-icon {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+}
+
+.gallery__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+}
+
+

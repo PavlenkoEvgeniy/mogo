@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
@@ -17,7 +17,7 @@ const sync = require("browser-sync").create();
 // Styles
 
 const styles = () => {
-  return gulp.src("source/sass/style.sass")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -88,7 +88,7 @@ const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img/icons"));
 }
 
 exports.sprite = sprite;
@@ -142,7 +142,7 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.sass", gulp.series(styles));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }

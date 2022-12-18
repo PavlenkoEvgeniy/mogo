@@ -4,8 +4,11 @@
 /* Normalize */
 @import 'global/normalize.scss';
 
-/* COntainer */
+/* Container */
 @import 'global/container.scss';
+
+/* Page */
+@import 'blocks/page';
 
 /* Intro */
 @import 'blocks/intro.scss';
@@ -27,3 +30,18 @@
 
 /* Footer */
 @import 'blocks/footer.scss';
+
+/* Section */
+@import 'blocks/section.scss';
+
+/* Gallery */
+@import 'blocks/gallery.scss';
+
+/* Statistics */
+@import 'blocks/statistics.scss';
+
+/* Card */
+@import 'blocks/card.scss';
+
+/* Rule */
+@import 'blocks/rule.scss';
