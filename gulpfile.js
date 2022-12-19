@@ -13,6 +13,8 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
+const ttfToWoff = require("gulp-ttf-to-woff");
+const ttfToWoff2 = require("gulp-ttf2woff2");
 
 // Styles
 
@@ -52,6 +54,26 @@ const scripts = () => {
 }
 
 exports.scripts = scripts;
+
+// Fonts
+const woff = () => {
+  return gulp.src("source/fonts/*.ttf")
+    .pipe(ttfToWoff())
+    .pipe(gulp.dest("build/fonts"));
+}
+
+const woff2 = () => {
+  return gulp.src("source/fonts/*.ttf")
+      .pipe(ttfToWoff2())
+      .pipe(gulp.dest("build/fonts"));
+}
+
+const convertFonts = gulp.series(
+  woff,
+  woff2
+)
+
+exports.fonts = convertFonts;
 
 // Images
 
@@ -152,6 +174,7 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   copy,
+  convertFonts,
   optimizeImages,
   gulp.parallel(
     styles,
@@ -170,6 +193,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   copy,
+  convertFonts,
   copyImages,
   gulp.parallel(
     styles,

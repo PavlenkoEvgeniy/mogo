@@ -16,6 +16,8 @@
     "gulp-sourcemaps": "3.0.0",
     "gulp-svgstore": "8.0.0",
     "gulp-terser": "2.0.1",
+    "gulp-ttf-to-woff": "^1.0.3",
+    "gulp-ttf2woff2": "^4.0.1",
     "gulp-webp": "4.0.1",
     "postcss": "8.3.6",
     "postcss-csso": "5.0.1",
