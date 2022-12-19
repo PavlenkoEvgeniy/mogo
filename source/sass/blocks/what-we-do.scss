@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  margin-bottom: 120px;
 }
 
 .what-we-do__image {
@@ -83,6 +85,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-style: italic;
+  line-height: 1.7;
   color: #999;
 
   border: 1px solid #e5e5e5;

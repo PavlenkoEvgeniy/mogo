@@ -1,0 +1,97 @@
+.slider {
+  position: relative;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0 90px;
+
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+  flex-direction: column;
+
+  position: relative;
+
+  padding-left: 200px;
+
+  &--current {
+    display: flex;
+  }
+}
+
+
+
+.slider__image {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+.slider__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
+  font-style: italic;
+  color: #999;
+}
+
+.slider__autor {
+  padding-left: 65px;
+
+  font-family: 'Kaushan Script', sans-serif;
+  font-size: 24px;
+  color: #333;
+
+  &::before {
+    content: '';
+
+    width: 60px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: 120px;
+    left: 200px;
+  }
+}
+
+.slider__button {
+  margin: 0;
+  padding: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-color: transparent;
+
+  border: none;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+}
+
+.slider__button--prev {
+  position: absolute;
+  top: 65px;
+  left: 35px;
+
+  transform: rotate(-45deg);
+}
+
+.slider__button--next {
+  position: absolute;
+  top: 65px;
+  right: 35px;
+
+  transform: rotate(135deg);
+}
+
+.slider__button:disabled {
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
