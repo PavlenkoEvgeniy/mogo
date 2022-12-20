@@ -1,0 +1,39 @@
+.social-icons__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+}
+
+.social-icons__item {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+
+  background-color: #fce38a;
+
+  transition: all 0.3s linear;
+
+  &:not(:last-child) {
+    border-right: 1px solid #f9bd87;
+  }
+
+  &:hover {
+    background-color: #f38181;
+  }
+
+  &:hover .social-icons__icon {
+    fill: #fff;
+  }
+}
+
+.social-icons__link {
+  margin: auto;
+}
+
+.social-icons__icon {
+  fill: #f38181;
+}

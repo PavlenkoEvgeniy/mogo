@@ -41,6 +41,10 @@
   &:hover .gallery__text {
     opacity: 1;
   }
+
+  &:hover .gallery__social-icons {
+    opacity: 1;
+  }
 }
 
 .gallery__image {
@@ -73,5 +77,18 @@
 
   opacity: 0;
 }
+
+.gallery__social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate3d(-50%, -50%, 0);
+
+  opacity: 0;
+
+  transition: opacity 0.5s linear;
+}
+
 
 

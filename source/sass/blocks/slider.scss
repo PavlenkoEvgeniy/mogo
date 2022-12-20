@@ -47,6 +47,8 @@
   font-size: 24px;
   color: #333;
 
+  position: relative;
+
   &::before {
     content: '';
 
@@ -56,8 +58,8 @@
     background-color: #f38181;
 
     position: absolute;
-    top: 120px;
-    left: 200px;
+    top: 13px;
+    left: 0;
   }
 }
 
@@ -81,6 +83,11 @@
   left: 35px;
 
   transform: rotate(-45deg);
+
+  &:hover:not(:disabled)  {
+    border-top: 2px solid darken(#ccc, 20%);
+    border-left: 2px solid darken(#ccc, 20%);
+  }
 }
 
 .slider__button--next {
@@ -89,9 +96,13 @@
   right: 35px;
 
   transform: rotate(135deg);
+
+  &:hover:not(:disabled) {
+    border-top: 2px solid darken(#ccc, 20%);
+    border-left: 2px solid darken(#ccc, 20%);
+  }
 }
 
 .slider__button:disabled {
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  opacity: 0.3;
 }
