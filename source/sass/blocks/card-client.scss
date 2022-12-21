@@ -1,0 +1,51 @@
+.card-client {
+  text-align: left;
+
+  position: relative;
+  padding-left: 180px;
+}
+
+.card-client__image {
+  display: block;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 40px;
+}
+
+.card-client__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.card-client__profession {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+  color: lighten(#333, 20%);
+
+  &:after {
+    content: '';
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    margin: 20px 0;
+  }
+}
+
+.card-client__text {
+  max-width: 380px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #999;
+}

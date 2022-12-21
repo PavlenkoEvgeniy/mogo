@@ -11,6 +11,14 @@
   padding-bottom: 40px;
 }
 
+.section--happy-clients {
+  background-color: #ccc;
+  background-image: url('../img/happy-clients/happy-clients-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .section__wrapper {
   display: flex;
   flex-direction: column;
@@ -100,4 +108,9 @@
   position: absolute;
   bottom: -675px;
   left: 663px
+}
+
+.section__clients {
+  padding-top: 60px;
+  padding-bottom: 80px;
 }

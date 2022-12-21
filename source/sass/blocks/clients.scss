@@ -1,0 +1,17 @@
+.clients {
+  text-align: left;
+}
+
+.clients__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 65px;
+}
+
+.clients__item {
+}
