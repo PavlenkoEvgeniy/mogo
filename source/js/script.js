@@ -71,8 +71,6 @@ let nextSlide = function () {
       if (sliderItems[i].classList.contains('slider__item--current')) {
         sliderItems[i].classList.remove('slider__item--current');
         sliderItems[i + 1].classList.add('slider__item--current');
-
-        console.log('Slide forward');
         return;
       }
     }
@@ -93,8 +91,6 @@ let prevSlide = function () {
       if (sliderItems[j].classList.contains('slider__item--current')) {
         sliderItems[j].classList.remove('slider__item--current');
         sliderItems[j - 1].classList.add('slider__item--current');
-
-        console.log('Slide back');
         return;
       }
     }
@@ -133,8 +129,6 @@ let nextSlideSecond = function () {
       if (sliderItemsSecond[i].classList.contains('slider__item--current')) {
         sliderItemsSecond[i].classList.remove('slider__item--current');
         sliderItemsSecond[i + 1].classList.add('slider__item--current');
-
-        console.log('Slide forward');
         return;
       }
     }
@@ -155,8 +149,6 @@ let prevSlideSecond = function () {
       if (sliderItemsSecond[j].classList.contains('slider__item--current')) {
         sliderItemsSecond[j].classList.remove('slider__item--current');
         sliderItemsSecond[j - 1].classList.add('slider__item--current');
-
-        console.log('Slide back');
         return;
       }
     }

@@ -52,8 +52,19 @@
     display: block;
   }
 
+  &--closed {
+    cursor: pointer;
+  }
+
   &--closed ~ .what-we-do__text{
     display: none;
+  }
+
+  &--closed + .what-we-do__button-toggle {
+    transform: rotate(225deg);
+    top: 15px;
+
+    cursor: pointer;
   }
 
   &::before {
@@ -114,7 +125,3 @@
   right: 20px;
 }
 
-.what-we-do__title--closed + .what-we-do__button-toggle {
-  transform: rotate(225deg);
-  top: 15px;
-}

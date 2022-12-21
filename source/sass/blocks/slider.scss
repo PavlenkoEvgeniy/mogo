@@ -22,8 +22,6 @@
   }
 }
 
-
-
 .slider__image {
   position: absolute;
 
@@ -79,6 +77,10 @@
   border: none;
   border-top: 2px solid #ccc;
   border-left: 2px solid #ccc;
+}
+
+.slider__button:not(:disabled) {
+  cursor: pointer;
 }
 
 .slider__button--prev {
