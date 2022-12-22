@@ -51,6 +51,7 @@
 .about__follow {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-style: italic;
   font-size: 15px;
   color: #999;
   margin-right: 20px;
@@ -96,6 +97,7 @@
 
   font-family: 'Roboto';
   font-weight: 300;
+  font-style: italic;
   font-size: 15px;
   color: darken(#999, 20%);
 
@@ -103,7 +105,12 @@
   border: 1px solid #e7e7e7;
 
   &::placeholder {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
     color: #999;
+
   }
 
   &:focus {
@@ -140,5 +147,3 @@
     background-color: darken(#95e1d3, 40%);
   }
 }
-
-
