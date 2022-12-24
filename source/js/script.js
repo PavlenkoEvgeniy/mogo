@@ -1,14 +1,14 @@
 /*  Accordion for 'What we do' section
 ------------------------------------------------------------------------*/
-let buttonToggle = document.querySelectorAll('.what-we-do__button-toggle');
-let wedoTitle = document.querySelectorAll('.what-we-do__title');
+const buttonToggle = document.querySelectorAll('.what-we-do__button-toggle');
+const wedoTitle = document.querySelectorAll('.what-we-do__title');
 
 // Toggle open/close element of accordion by pressing button
 buttonToggle.forEach(function (buttonToggle) {
   buttonToggle.addEventListener('click', function () {
 
     // Closing all elements
-    let title = document.querySelectorAll('.what-we-do__title');
+    const title = document.querySelectorAll('.what-we-do__title');
     title.forEach(function (title) {
       if (!title.classList.contains('what-we-do__title--closed')) {
         title.classList.add('what-we-do__title--closed')
@@ -16,8 +16,8 @@ buttonToggle.forEach(function (buttonToggle) {
     });
 
     //Opening current element
-    let parentElem = this.parentNode;
-    let contentBlock = parentElem.querySelector('.what-we-do__title');
+    const parentElem = this.parentNode;
+    const contentBlock = parentElem.querySelector('.what-we-do__title');
     if (contentBlock.classList.contains('what-we-do__title--closed')) {
       contentBlock.classList.remove('what-we-do__title--closed');
     } else {
@@ -32,7 +32,7 @@ wedoTitle.forEach(function (wedoTitle) {
   wedoTitle.addEventListener('click', function () {
 
     // Closing all elements
-    let title = document.querySelectorAll('.what-we-do__title');
+    const title = document.querySelectorAll('.what-we-do__title');
     title.forEach(function (title) {
       if (!title.classList.contains('what-we-do__title--closed')) {
         title.classList.add('what-we-do__title--closed')
@@ -40,8 +40,8 @@ wedoTitle.forEach(function (wedoTitle) {
     });
 
     //Opening current element
-    let parentElem = this.parentNode;
-    let contentBlock = parentElem.querySelector('.what-we-do__title');
+    const parentElem = this.parentNode;
+    const contentBlock = parentElem.querySelector('.what-we-do__title');
     if (contentBlock.classList.contains('what-we-do__title--closed')) {
       contentBlock.classList.remove('what-we-do__title--closed');
     } else {
@@ -53,12 +53,12 @@ wedoTitle.forEach(function (wedoTitle) {
 
 /* Slider
 -----------------------------------------------------------------------*/
-let buttonSliderPrev = document.querySelector('.slider__button--prev-first-slider');
-let buttonSliderNext = document.querySelector('.slider__button--next-first-slider');
-let sliderItems = document.querySelectorAll('.slider__item--first-slider');
+const buttonSliderPrev = document.querySelector('.slider__button--prev-first-slider');
+const buttonSliderNext = document.querySelector('.slider__button--next-first-slider');
+const sliderItems = document.querySelectorAll('.slider__item--first-slider');
 
 // Making move to the next slide
-let nextSlide = function () {
+const nextSlide = function () {
   for (let i = 0; i < sliderItems.length; i++) {
 
     // Checking if it is last slide or not
@@ -78,7 +78,7 @@ let nextSlide = function () {
 }
 
 // Making move to the previous slide
-let prevSlide = function () {
+const prevSlide = function () {
   for (let j = sliderItems.length -1; j > 0; j--) {
 
     // Checking if it is last slide or not
@@ -111,12 +111,12 @@ buttonSliderPrev.addEventListener('click', function () {
 
 /* Second slider
 ------------------------------------------------------------------------*/
-let buttonSliderPrevSecond = document.querySelector('.slider__button--prev-second-slider');
-let buttonSliderNextSecond = document.querySelector('.slider__button--next-second-slider');
-let sliderItemsSecond = document.querySelectorAll('.slider__item--second-slider');
+const buttonSliderPrevSecond = document.querySelector('.slider__button--prev-second-slider');
+const buttonSliderNextSecond = document.querySelector('.slider__button--next-second-slider');
+const sliderItemsSecond = document.querySelectorAll('.slider__item--second-slider');
 
 // Making move to the next slide
-let nextSlideSecond = function () {
+const nextSlideSecond = function () {
   for (let i = 0; i < sliderItemsSecond.length; i++) {
 
     // Checking if it is last slide or not
@@ -136,7 +136,7 @@ let nextSlideSecond = function () {
 }
 
 // Making move to the previous slide
-let prevSlideSecond = function () {
+const prevSlideSecond = function () {
   for (let j = sliderItemsSecond.length -1; j > 0; j--) {
 
     // Checking if it is last slide or not
