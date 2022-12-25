@@ -26,16 +26,16 @@
               <a class="main-nav__link main-nav__link--current">About</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Service</a>
+              <a class="main-nav__link" href="#section-services">Service</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Work</a>
+              <a class="main-nav__link" href="#section-works">Work</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Blog</a>
+              <a class="main-nav__link" href="#section-blog">Blog</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Contact</a>
+              <a class="main-nav__link" href="#page-footer">Contact</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
@@ -80,19 +80,19 @@
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">
+            <a class="footer__link" href="#section-works">
               <b>2</b>
               <span class="footer__text">Work</span>
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">
+            <a class="footer__link" href="#section-about">
               <b>3</b>
               <span class="footer__text">About</span>
             </a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">
+            <a class="footer__link" href="#page-footer">
               <b>4</b>
               <span class="footer__text">Contacts</span>
             </a>
@@ -103,7 +103,7 @@
   </section>
 
   <!-- About -->
-  <section class="section section--about">
+  <section class="section section--about" id="section-about">
     <div class="section__wrapper container">
       <span class="section__suptitle">What we do</span>
       <h2 class="section__title">Story about us</h2>
@@ -191,7 +191,7 @@
   </div>
 
   <!-- Services -->
-  <section class="section">
+  <section class="section" id="section-services">
     <div class="section__wrapper container">
       <span class="section__suptitle">We work with</span>
       <h2 class="section__title">Amazing Services</h2>
@@ -553,7 +553,7 @@
   </div><!-- /.logos -->
 
   <!-- Works -->
-  <section class="section section--works">
+  <section class="section section--works" id="section-works">
     <div class="section__wrapper">
       <span class="section__suptitle">What we do</span>
       <h2 class="section__title">Some of our work</h2>
@@ -796,7 +796,7 @@
   </section>
 
   <!-- Blog -->
-  <section class="section">
+  <section class="section" id="section-blog">
     <div class="section__wrapper container">
       <span class="section__suptitle">Our stories</span>
       <h2 class="section__title">Our stories</h2>
@@ -874,7 +874,7 @@
   </div>
 
   <!-- Page footer -->
-  <footer class="page-footer">
+  <footer class="page-footer" id="page-footer">
     <div class="page-footer__wrapper container">
       <div class="page-footer__content">
         <div class="page-footer__about about">
@@ -981,37 +981,44 @@
           <b class="blogs__title">Blogs</b>
           <ul class="blogs__list">
             <li class="blogs__item">
-              <picture>
-                <source type="image/webp" srcset="img/blogs/1.webp">
-                <img class="blogs__image" src="img/blogs/1.jpg" alt="Image" width="120" height="80">
-              </picture>
-              <div class="blogs__content">
-                <p class="blogs__text">Lorem ipsum dolor sit amet,
-                  consectetur adipiscing</p>
-                <time class="blogs__time" datetime="2016-01-09">Jan 9 2016</time>
-              </div>
+              <a class="blogs__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/blogs/1.webp">
+                  <img class="blogs__image" src="img/blogs/1.jpg" alt="Image" width="120" height="80">
+                </picture>
+
+                <div class="blogs__content">
+                  <p class="blogs__text">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing</p>
+                  <time class="blogs__time" datetime="2016-01-09">Jan 9 2016</time>
+                </div>
+              </a>
             </li>
             <li class="blogs__item">
-              <picture>
-                <source type="image/webp" srcset="img/blogs/2.webp">
-                <img class="blogs__image" src="img/blogs/2.jpg" alt="Image" width="120" height="80">
-              </picture>
-              <div class="blogs__content">
-                <p class="blogs__text">Lorem ipsum dolor sit amet,
-                  consectetur adipiscing</p>
-                <time class="blogs__time" datetime="2016-01-09">Jan 9 2016</time>
-              </div>
+              <a class="blogs__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/blogs/2.webp">
+                  <img class="blogs__image" src="img/blogs/2.jpg" alt="Image" width="120" height="80">
+                </picture>
+                <div class="blogs__content">
+                  <p class="blogs__text">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing</p>
+                  <time class="blogs__time" datetime="2016-01-09">Jan 9 2016</time>
+                </div>
+              </a>
             </li>
             <li class="blogs__item">
-              <picture>
-                <source type="image/webp" srcset="img/blogs/3.webp">
-                <img class="blogs__image" src="img/blogs/3.jpg" alt="Image" width="120" height="80">
-              </picture>
-              <div class="blogs__content">
-                <p class="blogs__text">Lorem ipsum dolor sit amet,
-                  consectetur adipiscing</p>
-                <time class="blogs__time" datetime="2016-01-09">Jan 9 2016</time>
-              </div>
+              <a class="blogs__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/blogs/3.webp">
+                  <img class="blogs__image" src="img/blogs/3.jpg" alt="Image" width="120" height="80">
+                </picture>
+                <div class="blogs__content">
+                  <p class="blogs__text">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing</p>
+                  <time class="blogs__time" datetime="2016-01-09">Jan 9 2016</time>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -1019,65 +1026,83 @@
           <b class="instagram__title">Instagram</b>
           <ul class="instagram__list">
             <li class="instagram__item">
-              <picture>
-                <source type="image/webp" srcset="img/instagram/1.webp">
-                <img class="instagram__image" src="img/instagram/1.jpg" alt="Image" width="88" height="88">
-              </picture>
+              <a class="instagram__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/instagram/1.webp">
+                  <img class="instagram__image" src="img/instagram/1.jpg" alt="Image" width="88" height="88">
+                </picture>
+              </a>
             </li>
             <li class="instagram__item">
-              <picture>
-                <source type="image/webp" srcset="img/instagram/2.webp">
-                <img class="instagram__image" src="img/instagram/2.jpg" alt="Image" width="88" height="88">
-              </picture>
+              <a class="instagram__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/instagram/2.webp">
+                  <img class="instagram__image" src="img/instagram/2.jpg" alt="Image" width="88" height="88">
+                </picture>
+              </a>
             </li>
             <li class="instagram__item">
-              <picture>
-                <source type="image/webp" srcset="img/instagram/3.webp">
-                <img class="instagram__image" src="img/instagram/3.jpg" alt="Image" width="88" height="88">
-              </picture>
+              <a class="instagram__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/instagram/3.webp">
+                  <img class="instagram__image" src="img/instagram/3.jpg" alt="Image" width="88" height="88">
+                </picture>
+              </a>
             </li>
             <li class="instagram__item">
-              <picture>
-                <source type="image/webp" srcset="img/instagram/4.webp">
-                <img class="instagram__image" src="img/instagram/4.jpg" alt="Image" width="88" height="88">
-              </picture>
+              <a class="instagram__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/instagram/4.webp">
+                  <img class="instagram__image" src="img/instagram/4.jpg" alt="Image" width="88" height="88">
+                </picture>
+              </a>
             </li>
             <li class="instagram__item">
-              <picture>
-                <source type="image/webp" srcset="img/instagram/5.webp">
-                <img class="instagram__image" src="img/instagram/5.jpg" alt="Image" width="88" height="88">
-              </picture>
+              <a class="instagram__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/instagram/5.webp">
+                  <img class="instagram__image" src="img/instagram/5.jpg" alt="Image" width="88" height="88">
+                </picture>
+              </a>
             </li>
             <li class="instagram__item">
-              <picture>
-                <source type="image/webp" srcset="img/instagram/6.webp">
-                <img class="instagram__image" src="img/instagram/6.jpg" alt="Image" width="88" height="88">
-              </picture>
+              <a class="instagram__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/instagram/6.webp">
+                  <img class="instagram__image" src="img/instagram/6.jpg" alt="Image" width="88" height="88">
+                </picture>
+              </a>
             </li>
             <li class="instagram__item">
-              <picture>
-                <source type="image/webp" srcset="img/instagram/7.webp">
-                <img class="instagram__image" src="img/instagram/7.jpg" alt="Image" width="88" height="88">
-              </picture>
+              <a class="instagram__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/instagram/7.webp">
+                  <img class="instagram__image" src="img/instagram/7.jpg" alt="Image" width="88" height="88">
+                </picture>
+              </a>
             </li>
             <li class="instagram__item">
-              <picture>
-                <source type="image/webp" srcset="img/instagram/8.webp">
-                <img class="instagram__image" src="img/instagram/8.jpg" alt="Image" width="88" height="88">
-              </picture>
+              <a class="instagram__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/instagram/8.webp">
+                  <img class="instagram__image" src="img/instagram/8.jpg" alt="Image" width="88" height="88">
+                </picture>
+              </a>
             </li>
             <li class="instagram__item">
-              <picture>
-                <source type="image/webp" srcset="img/instagram/9.webp">
-                <img class="instagram__image" src="img/instagram/9.jpg" alt="Image" width="88" height="88">
-              </picture>
+              <a class="instagram__link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/instagram/9.webp">
+                  <img class="instagram__image" src="img/instagram/9.jpg" alt="Image" width="88" height="88">
+                </picture>
+              </a>
             </li>
           </ul>
-          <a class="instagram__link" href="#">View more photos</a>
+          <a class="instagram__view-link" href="#">View more photos</a>
         </div>
       </div>
     </div><!-- /.page-footer__wrapper container -->
-    <p class="page-footer__copyright">© 2016 MoGo free PSD template by <span>Laaqiq<span></p>
+    <p class="page-footer__copyright">PSD Template was taken from <a href="https://freebiesbug.com/psd-freebies/mogo-free-one-page-psd-template/">freebiesbug.com</a></p>
   </footer><!-- /.page-footer -->
 
   <script src="js/script.min.js"></script>

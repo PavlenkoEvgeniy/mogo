@@ -26,8 +26,17 @@
   text-align: center;
   color: #333;
 
-  & span {
+  & a {
+    text-decoration: none;
     color: #f38181;
+
+    &:visited {
+      color: #f38181;
+    }
+
+    &:hover {
+      color: darken(#f38181, 20%);
+    }
   }
 }
 

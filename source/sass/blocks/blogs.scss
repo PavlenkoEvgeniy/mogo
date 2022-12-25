@@ -30,12 +30,22 @@
   }
 }
 
+.blogs__link {
+  display: flex;
+  text-decoration: none;
+}
+
 .blogs__image {
   display: block;
   width: 100%;
   height: auto;
 
   object-fit: contain;
+
+  &:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s linear;
+  }
 }
 
 .blogs__content {
@@ -48,6 +58,11 @@
   font-size: 12px;
   text-transform: uppercase;
   color: #333;
+
+  &:hover {
+    color: darken(#333, 20%);
+    transition: color 0.2s linear;
+  }
 }
 
 .blogs__time {
