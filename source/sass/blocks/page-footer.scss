@@ -1,6 +1,10 @@
 .page-footer {
   background-color: #f8f8f8;
   padding: 75px 0;
+
+  @media (max-width: $tablets-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .page-footer__wrapper::after {
@@ -18,6 +22,12 @@
 .page-footer__content {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $tablets-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
 }
 
 .page-footer__copyright {

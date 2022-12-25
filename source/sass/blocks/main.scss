@@ -8,6 +8,10 @@
   color: #fff;
 
   margin-bottom: 20px;
+
+  @media (max-width: $tablets-width) {
+    font-size: 36px;
+  }
 }
 
 .main__title {
@@ -30,9 +34,20 @@
     background-color: #fff;
 
     margin: 65px auto 45px;
+
+    @media (max-width: $tablets-width) {
+      margin-top: 45px;
+    }
+  }
+
+  @media (max-width: $tablets-width) {
+    font-size: 80px;
   }
 }
 
+.main__button {
+  margin-bottom: 35px;
+}
 
 
 

@@ -5,6 +5,10 @@
   background-size: cover;
 
   padding-bottom: 580px;
+
+  @media (max-width: $tablets-width) {
+    padding-bottom: 400px;
+  }
 }
 
 .section--team {
@@ -92,22 +96,39 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @media (max-width: $mobile-XL-width) {
+    flex-direction: column;
+  }
 }
 
 .section__card {
   flex-basis: 33%;
+    margin-bottom: 15px;
 }
 
 .section__image-tablet {
   position: absolute;
   bottom: -580px;
-  left: 333px;
+  left: 28.5%;
+
+  @media (max-width: $tablets-width) {
+    width: 300px;
+    height: auto;
+    bottom: -400px;
+  }
 }
 
 .section__image-phone {
   position: absolute;
   bottom: -675px;
-  left: 663px
+  left: 52%;
+
+  @media (max-width: $tablets-width) {
+    width: 200px;
+    height: auto;
+    bottom: -475px;
+  }
 }
 
 .section__clients {

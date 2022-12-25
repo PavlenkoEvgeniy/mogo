@@ -10,8 +10,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #e89584;
+
+  @media (max-width: $tablets-width) {
+    height: auto;
+  }
 }
 
 .intro__main {
   margin-top: 90px;
+
+  @media (max-width: $tablets-width) {
+    margin-top: 15px;
+  }
 }

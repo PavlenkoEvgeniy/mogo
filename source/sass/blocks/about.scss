@@ -1,5 +1,9 @@
 .about {
-  max-width: 470px
+  max-width: 470px;
+
+  @media (max-width: $tablets-width) {
+    max-width: none;
+  }
 }
 
 .about__logo {

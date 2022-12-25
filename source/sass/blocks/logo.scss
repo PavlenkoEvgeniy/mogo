@@ -13,4 +13,9 @@
     color: #fce38a;
     transition: color 0.3s linear;
   }
+
+  @media (max-width: $tablets-width) {
+    font-size: 24px;
+    padding: 15px 0;
+  }
 }
