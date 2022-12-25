@@ -7,8 +7,9 @@
   list-style: none;
 }
 
+
 .gallery__item {
-  background-color: #95e1d3;
+  background-color: #fff;
   position: relative;
 }
 
@@ -25,9 +26,16 @@
   position: relative;
   transition: all 0.3s linear;
 
+  @media (max-width: $mobile-L-width) {
+    background: none;
+  }
+
   &:hover:not(.gallery__card--not-moving) {
     transform: translate(-10px, -10px);
 
+    @media (max-width: $tablets-width) {
+      transform: none;
+    }
   }
 
   &:hover .gallery__image {
@@ -64,6 +72,10 @@
 
   opacity: 0;
   transition: opacity 0.3s linear;
+
+  @media (max-width: $tablets-width) {
+    display: none;
+  }
 }
 
 .gallery__icon--works {
@@ -86,6 +98,10 @@
   opacity: 0;
 
   transition: opacity 0.3s linear;
+
+  @media (max-width: $tablets-width) {
+    display: none;
+  }
 }
 
 .gallery__text--works {
@@ -103,6 +119,11 @@
   font-size: 14px;
 
   color: #fff;
+
+
+  @media (max-width: $tablets-width) {
+    display: none;
+  }
 }
 
 .gallery__subtitle {
@@ -123,6 +144,10 @@
   opacity: 0;
 
   transition: opacity 0.5s linear;
+
+  @media (max-width: $tablets-width) {
+    display: none;
+  }
 }
 
 .gallery__designation {
@@ -145,16 +170,23 @@
   text-transform: uppercase;
   line-height: 1.6;
   color: #333;
+
+  @media (max-width: $tablets-width) {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .gallery__profession {
-  font-family:'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 15px;
 
   color: #999;
+
+  @media (max-width: $tablets-width) {
+    font-size: 10px;
+  }
 }
-
-
-

@@ -1,5 +1,9 @@
 .instagram {
   max-width: 275px;
+
+  @media (max-width: $tablets-width) {
+    display: none;
+  }
 }
 
 .instagram__title {

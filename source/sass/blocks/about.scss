@@ -1,9 +1,5 @@
 .about {
   max-width: 470px;
-
-  @media (max-width: $tablets-width) {
-    max-width: none;
-  }
 }
 
 .about__logo {
@@ -12,6 +8,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 46px;
+  line-height: 1;
   color: #ccc;
 
   margin-bottom: 25px;

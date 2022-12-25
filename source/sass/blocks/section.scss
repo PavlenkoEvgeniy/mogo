@@ -23,6 +23,12 @@
   background-position: center;
 }
 
+.section--blog {
+  @media (max-width: $mobile-XL-width) {
+    margin-bottom: 25px;
+  }
+}
+
 .section__wrapper {
   display: flex;
   flex-direction: column;

@@ -1,5 +1,9 @@
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+
+  @media (max-width: $mobile-L-width) {
+    justify-content: center;
+  }
 }

@@ -18,6 +18,10 @@
   padding: 80px 0;
 
   border-left: 1px solid #b5eae0;
+
+  @media (max-width: $tablets-width) {
+    padding: 20px 0;
+  }
 }
 
 .statistics__item:last-child {
@@ -30,6 +34,10 @@
   font-size: 72px;
   text-transform: uppercase;
   color: #fff;
+
+  @media (max-width: $tablets-width) {
+    font-size: 36px;
+  }
 }
 
 .statistics__text {

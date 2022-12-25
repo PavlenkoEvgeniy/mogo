@@ -20,6 +20,10 @@
   &--current {
     display: flex;
   }
+
+  @media (max-width: $tablets-width) {
+    padding-left: 100px;
+  }
 }
 
 .slider__image {
@@ -27,6 +31,13 @@
 
   top: 0;
   left: 0;
+
+  @media (max-width: $tablets-width) {
+    width: 75px;
+    height: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .slider__image--round {
@@ -40,6 +51,10 @@
   line-height: 1.5;
   font-style: italic;
   color: #999;
+
+  @media (max-width: $tablets-width) {
+    font-size: 16px;
+  }
 }
 
 .slider__autor {

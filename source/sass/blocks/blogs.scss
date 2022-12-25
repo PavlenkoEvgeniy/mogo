@@ -1,5 +1,9 @@
 .blogs {
   max-width: 345px;
+
+  @media (max-width: $mobile-XL-width) {
+    display: none;
+  }
 }
 
 .blogs__title {

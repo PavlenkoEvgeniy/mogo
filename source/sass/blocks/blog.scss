@@ -1,3 +1,10 @@
+.blog {
+  @media (max-width: $mobile-XL-width) {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
 .blog__list {
   margin: 0;
   padding: 0;
@@ -7,6 +14,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
+
+
+  @media (max-width: $mobile-XL-width) {
+    grid-template-columns: 1fr;
+  }
 
 }
 
@@ -85,6 +97,11 @@
     background-color: #e5e5e5;
 
     margin: 15px 0;
+
+
+    @media (max-width: $mobile-XL-width) {
+      margin: 25px 0;
+    }
   }
 }
 
