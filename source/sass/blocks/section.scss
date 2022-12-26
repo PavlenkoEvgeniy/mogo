@@ -8,11 +8,16 @@
 
   @media (max-width: $tablets-width) {
     padding-bottom: 400px;
+    overflow: hidden;
   }
 }
 
 .section--team {
   padding-bottom: 40px;
+
+  @media (max-width: $mobile-L-width) {
+    padding-bottom: 0;
+  }
 }
 
 .section--happy-clients {
@@ -81,6 +86,12 @@
 
 .section__gallery {
   margin-bottom: 110px;
+}
+
+.section__gallery--vertical {
+  @media (max-width: $mobile-L-width) {
+    margin-bottom: 0;
+  }
 }
 
 .section__gallery--works {

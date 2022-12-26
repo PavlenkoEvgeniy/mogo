@@ -99,8 +99,8 @@
     margin: 15px 0;
 
 
-    @media (max-width: $mobile-XL-width) {
-      margin: 25px 0;
+    @media (max-width: $tablets-width) {
+      margin: 5px 0;
     }
   }
 }
@@ -112,6 +112,10 @@
   font-size: 15px;
   text-align: left;
   color: #999;
+
+  @media (max-width: $tablets-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .blog__views {

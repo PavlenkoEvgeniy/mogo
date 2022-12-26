@@ -25,6 +25,15 @@
   line-height: 0.9;
   color: #fff;
 
+  @media (max-width: $tablets-width) {
+    font-size: 80px;
+    margin-top: 45px;
+  }
+
+  @media (max-width: $mobile-M-width) {
+    font-size: 60px;
+  }
+
   &::after {
     content: '';
     display: block;
@@ -35,13 +44,7 @@
 
     margin: 65px auto 45px;
 
-    @media (max-width: $tablets-width) {
-      margin-top: 45px;
-    }
-  }
 
-  @media (max-width: $tablets-width) {
-    font-size: 80px;
   }
 }
 

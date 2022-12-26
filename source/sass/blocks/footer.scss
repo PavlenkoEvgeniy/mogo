@@ -1,5 +1,9 @@
 .footer {
   margin-top: auto;
+
+  @media (max-width: $mobile-M-width) {
+    display: none;
+  }
 }
 
 .footer__list {

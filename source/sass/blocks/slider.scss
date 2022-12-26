@@ -24,6 +24,10 @@
   @media (max-width: $tablets-width) {
     padding-left: 100px;
   }
+
+  @media (max-width: $mobile-M-width) {
+    padding-left: 0;
+  }
 }
 
 .slider__image {
@@ -37,6 +41,10 @@
     height: 75px;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  @media (max-width: $mobile-M-width) {
+    display: none;
   }
 }
 

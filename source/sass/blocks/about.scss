@@ -123,6 +123,10 @@
 
     border: 1px solid #95e1d3;
   }
+
+  @media (max-width: $mobile-M-width) {
+    max-width: initial;
+  }
 }
 
 .about__form-button {
@@ -150,5 +154,9 @@
 
   &:active {
     background-color: darken(#95e1d3, 40%);
+  }
+
+  @media (max-width: $mobile-M-width) {
+    padding: 10px 10px;
   }
 }

@@ -38,6 +38,10 @@
   @media (max-width: $tablets-width) {
     font-size: 36px;
   }
+
+  @media (max-width: $mobile-M-width) {
+    font-size: 16px;
+  }
 }
 
 .statistics__text {
@@ -45,4 +49,8 @@
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
+
+  @media (max-width: $mobile-M-width) {
+    font-size: 12px;
+  }
 }
