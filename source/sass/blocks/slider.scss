@@ -63,6 +63,11 @@
   @media (max-width: $tablets-width) {
     font-size: 16px;
   }
+
+  @media (max-width: $mobile-M-width) {
+    line-height: 1;
+    font-size: 16px;
+  }
 }
 
 .slider__autor {
@@ -85,6 +90,16 @@
     position: absolute;
     top: 13px;
     left: 0;
+
+    @media (max-width:$mobile-M-width) {
+      width: 30px;
+    }
+
+  }
+
+  @media (max-width:$mobile-M-width) {
+    font-size: 16px;
+    padding-left: 35px;
   }
 }
 
