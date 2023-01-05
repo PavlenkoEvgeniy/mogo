@@ -1,3 +1,5 @@
+'use strict';
+
 /*  Accordion for 'What we do' section
 ------------------------------------------------------------------------*/
 const buttonToggle = document.querySelectorAll('.what-we-do__button-toggle');
